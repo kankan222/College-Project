@@ -1,0 +1,50 @@
+.mt{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.boxContainer{
+    border: 1px solid var(--black-light);
+    overflow: hidden;
+    border-radius: var(--border-radius-3) var(--border-radius-3);
+}
+.case{
+    text-align: center;
+    color: var(--white);
+    background: var(--primary-color);
+    padding: var(--padding-rem-0) 0;
+}
+:is(.abCon, .principal, .rector, .vice-principal) .image{
+    width: 100%;
+    margin: auto;
+    padding: var(--padding-rem-1);
+    text-align: center;
+}
+.abCon img{
+    width: 100%;
+    aspect-ratio: 4/1;
+}
+:is(.principal, .rector, .vice-principal) span.uppercase{
+    font-size: 16px;
+    font-weight: 500;
+}
+.pure{
+    padding: var(--padding-rem-0) var(--padding-rem-1);
+}
+/* ABOUT US ENDS HERE  */
+.flexion{
+    display: flex;
+    align-items: center;
+}
+.img{
+    width: 285px;
+    aspect-ratio: 1;
+}
+
+@media screen and (max-width: 780px) {
+    .abCon img{
+        aspect-ratio: 16/9;
+    }
+    .flexion{
+        flex-direction: column;
+    }
+}

@@ -29,14 +29,14 @@ document.querySelectorAll(".nav-link").forEach((n) =>
   })
 );
 
-// ACTIVE LINK
-let activePage = window.location.pathname;
-let navLinks = document.querySelectorAll(".nav-link").
-forEach((link) => {
-  if (link.href.includes(`${activePage}`)) {
-    link.classList.add("activeLink");
-  }
-});
+// // ACTIVE LINK
+// let activePage = window.location.pathname;
+// let navLinks = document.querySelectorAll(".nav-link").
+// forEach((link) => {
+//   if (link.href.includes(`${activePage}`)) {
+//     link.classList.add("activeLink");
+//   }
+// });
 
 //SLIDER
 

@@ -104,6 +104,7 @@ header .address-info{
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 header .address-info .uil{
   font-size: 16px;
@@ -112,6 +113,10 @@ header .address-info .uil{
 header .address-info p{
   font-size: 14px;
   font-weight: 500;
+}
+header .address-info p:hover{
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 header .title {
   border-left: 3px solid var(--primary-color);
@@ -290,9 +295,6 @@ nav ul li a:hover{
 .adm-not .flex{
   padding: var(--padding-rem-1);
 }
-.adm-not .science{
-  /* background: var(--primary-light-color); */
-}
 .adm-not .para{
   color: var(--primary-color);
 }
@@ -321,6 +323,7 @@ nav ul li a:hover{
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
+  z-index: 9;
 }
 /* ADMISSION SECTION ENDS HERE  */
 .details{
