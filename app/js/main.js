@@ -65,6 +65,28 @@ Array.from(document.getElementsByTagName('img')).forEach(function(el){
     document.querySelector('#photoimage').src = el.src;
   })
 })
-document.querySelector('#closeImg').addEventListener('click',()=>{
+document.querySelector('.background-blur').addEventListener('click',()=>{
   document.querySelector('.background-blur').classList.add('hide');
 })
+
+//Modal Popup
+document.querySelector(`.art`).onclick = function(){
+  document.querySelector(`.modal_popup`).classList.remove(`hide`);
+}
+document.querySelector(`.science`).onclick = function(){
+  document.querySelector(`.modal_popup`).classList.remove(`hide`);
+}
+document.querySelector(`.commerce`).onclick = function(){
+  document.querySelector(`.modal_popup`).classList.remove(`hide`);
+}
+
+
+
+
+
+
+//HIDE modal Popup
+document.querySelector(`.modal_popup`).onclick = function(){
+  document.querySelector(`.modal_popup`).classList.add(`hide`);
+}
+
