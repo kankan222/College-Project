@@ -286,6 +286,7 @@ nav ul li a:hover{
   flex-basis: 100%;
   margin: 0 auto;
   background: var(--primary-light-color);
+  border: 2px solid var(--primary-color);
 }
 .adm-not :is(.conTru, .conBox){
   padding: 0;
