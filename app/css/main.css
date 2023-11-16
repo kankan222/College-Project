@@ -5,6 +5,7 @@
   --white: hsl(100, 100%, 100%);
   --primary-color: hsl(24, 100%, 50%);
   --primary-light-color: hsl(24, 100%, 95%);
+  --primary-color-lite: hsl(24, 100%, 90%);
 
   --border-radius-1: 5px;
   --border-radius-2: 8px;
@@ -40,6 +41,9 @@ body {
   -webkit-tap-highlight-color: transparent;
   position: relative;
 }
+body.flow{
+  overflow: hidden;
+}
 a {
   text-decoration: none;
   color: var(--black);
@@ -53,6 +57,7 @@ img{
   object-fit: cover;
   overflow: hidden;
   object-position: center;
+  cursor: pointer;
 }
 .wigin{
   width: 90%;
@@ -160,6 +165,7 @@ nav {
   position: absolute;
   width: 100%;
   border-bottom: 2px solid var(--primary-color);
+  z-index: 10;
 }
 #hamburger {
   font-size: 30px;
@@ -279,16 +285,17 @@ nav ul li a:hover{
   flex-grow: 1;
   flex-basis: 100%;
   margin: 0 auto;
+  background: var(--primary-light-color);
 }
 .adm-not :is(.conTru, .conBox){
   padding: 0;
 }
-:is(.adm-not, .modal_popup) .background{
+:is(.adm-not, .modal_popup, .sci_modal_popup, .com_modal_popup) .background{
   background: var(--primary-color);
   color: var(--white);
   border-radius: var(--border-radius-1) var(--border-radius-1) 0 0;
 }
-:is(.adm-not, .modal_popup) .uppercase{
+:is(.adm-not, .modal_popup, .sci_modal_popup, .com_modal_popup) .uppercase{
   text-align: center;
   padding: var(--padding-rem-0) 0;
 }
@@ -297,6 +304,7 @@ nav ul li a:hover{
 }
 .adm-not .para{
   color: var(--primary-color);
+  text-transform: uppercase;
 }
 .conTru-scroller{
   height: 25dvh;
@@ -391,7 +399,8 @@ footer .uil:hover{
   color: var(--primary-color);
 }
 /* -----BACKGROUND IMAGE CONTAINER-------- */
-.background-blur, .modal_popup{
+.background-blur, :is(.modal_popup, .sci_modal_popup, 
+.com_modal_popup){
   height: 100vh;
   position: fixed;
   top: 0;
@@ -402,7 +411,8 @@ footer .uil:hover{
   z-index: 99;
   transition: all 500s ease;
 }
-.background-blur .image-container, .modal_popup .modal_container{
+.background-blur .image-container, :is(.modal_popup, .sci_modal_popup, 
+.com_modal_popup) .modal_container{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -436,15 +446,15 @@ footer .uil:hover{
   cursor: pointer;
 }
 /* MODAL CONTAINER FOR SUBJECTS */
-.modal_popup .modal_container{
+:is(.modal_popup, .sci_modal_popup, .com_modal_popup) .modal_container{
   background: var(--primary-light-color);
 }
-.modal_popup .subjects{
+:is(.modal_popup, .sci_modal_popup, .com_modal_popup) .subjects{
   border: 1px solid var(--black-light);
   padding: var(--padding-rem-2);
   border-radius: 0 0 var(--border-radius-3) var(--border-radius-3);
 }
-.modal_popup .subjects li{
+:is(.modal_popup, .sci_modal_popup, .com_modal_popup) .subjects li{
   list-style: square;
   /* color: var(--primary-color); */
 }

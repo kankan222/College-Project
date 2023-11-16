@@ -6,6 +6,7 @@
     border: 1px solid var(--black-light);
     overflow: hidden;
     border-radius: var(--border-radius-3) var(--border-radius-3);
+    transition: 300ms ease;
 }
 .case{
     text-align: center;
@@ -39,12 +40,79 @@
     width: 285px;
     aspect-ratio: 1;
 }
+/* ========================
+        STAFF PAGE
+======================== */
+.staff h2{
+    background: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    border-radius: var(--border-radius-2) var(--border-radius-2) 0 0;
+    padding-top: var(--padding-rem-0);
+    padding-bottom: var(--padding-rem-0);
+}
+.staff .gridBox{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1rem;
+}
+.staff .coverBox{
+    padding: var(--padding-rem-1);
+    border-radius: 0 0 var(--border-radius-2) var(--border-radius-2);
+    margin-bottom: 2rem;
+}
+.staff .profile{
+    background: var(--primary-light-color);
+    text-align: center;
+    width: 100%;
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-1);
+    cursor: pointer;
+}
+.staff .profile:hover{
+    box-shadow: var(--box-shadow-3);
+  border: 1px solid var(--primary-light-color)
+}
+.staff .profile img{
+    width: 100px;
+    aspect-ratio: 1;
+    box-shadow: none;
+    margin-top: 5px;
+    object-fit: fill;
+}
+.staff .profile .uppercase{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
 
+
+
+
+
+
+
+
+
+
+
+/* -------------MEDIA QUERIES--------------- */
 @media screen and (max-width: 780px) {
     .abCon img{
         aspect-ratio: 16/9;
     }
     .flexion{
         flex-direction: column;
+    }
+
+    .staff .gridBox{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .staff .profile img{
+        /* width: 75px; */
+    }
+    .staff .profile :is(.uppercase, .name){
+        font-size: 10px;
     }
 }

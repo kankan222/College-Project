@@ -19,6 +19,7 @@ hamBurger.onclick = function () {
   hamBurger.classList.toggle("uil-times");
   navList.classList.toggle("active");
   autoInput.classList.toggle("hide");
+  document.querySelector(`body`).classList.toggle(`flow`);
 };
 
 document.querySelectorAll(".nav-link").forEach((n) =>
@@ -63,30 +64,38 @@ Array.from(document.getElementsByTagName('img')).forEach(function(el){
   el.addEventListener('click',()=>{
     document.querySelector('.background-blur').classList.remove(`hide`);
     document.querySelector('#photoimage').src = el.src;
+    document.querySelector(`body`).classList.add(`flow`);
   })
 })
 document.querySelector('.background-blur').addEventListener('click',()=>{
   document.querySelector('.background-blur').classList.add('hide');
+  document.querySelector(`body`).classList.remove(`flow`);
 })
 
 //Modal Popup
 document.querySelector(`.art`).onclick = function(){
   document.querySelector(`.modal_popup`).classList.remove(`hide`);
+  document.querySelector(`body`).classList.add(`flow`);
 }
 document.querySelector(`.science`).onclick = function(){
-  document.querySelector(`.modal_popup`).classList.remove(`hide`);
+  document.querySelector(`.sci_modal_popup`).classList.remove(`hide`);
+  document.querySelector(`body`).classList.add(`flow`);
 }
 document.querySelector(`.commerce`).onclick = function(){
-  document.querySelector(`.modal_popup`).classList.remove(`hide`);
+  document.querySelector(`.com_modal_popup`).classList.remove(`hide`);
+  document.querySelector(`body`).classList.add(`flow`);
 }
-
-
-
-
-
-
 //HIDE modal Popup
 document.querySelector(`.modal_popup`).onclick = function(){
   document.querySelector(`.modal_popup`).classList.add(`hide`);
+  document.querySelector(`body`).classList.remove(`flow`);
+}
+document.querySelector(`.sci_modal_popup`).onclick = function(){
+  document.querySelector(`.sci_modal_popup`).classList.add(`hide`);
+  document.querySelector(`body`).classList.remove(`flow`);
+}
+document.querySelector(`.com_modal_popup`).onclick = function(){
+  document.querySelector(`.com_modal_popup`).classList.add(`hide`);
+  document.querySelector(`body`).classList.remove(`flow`);
 }
 
