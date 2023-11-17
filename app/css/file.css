@@ -44,7 +44,7 @@
         STAFF PAGE
 ======================== */
 :is(.staff, .fee-structure, .rules, .facilities,
-.imageGallery) h2{
+.imageGallery, .contact) h2{
     background: var(--primary-color);
     color: var(--white);
     text-align: center;
@@ -135,12 +135,93 @@ RULES
 /* ==========================
             GALLERY
 ========================== */
+.galleryBox{
+    flex-wrap: wrap;
+    padding: var(--padding-rem-1);
+    width: 100%;
+}
 .imageGallery img{
     width: 250px;
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
+    flex-grow: 1;
+    box-shadow: none;
 }
 .imageGallery .image{
     padding: var(--padding-rem-1);
+}
+/* =======================
+        CONTACT US 
+======================= */
+.contact .info{
+    padding: var(--padding-rem-1);
+    padding-bottom: 0;
+    width: 100%s;
+}
+.contact .form{
+    padding: var(--padding-rem-1);
+}
+.contact .uil{
+    font-size: 1.5rem;
+}
+.contact span.color{
+    font-weight: 600;
+}
+.form{
+    width: 100%;
+}
+.form .field{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+.form form :is(input, textarea){
+    width: 100%;
+    padding: var(--padding-2);
+    border-radius: 4px;
+    border: 1px solid var(--black-light);
+    font-size: 1rem;
+}
+.form form textarea{
+    resize: none;
+    height: 200px;
+}
+.form form .btn{
+    text-align: center;
+}
+.location span.color{
+    font-size: 14px;
+}
+/* ====================
+    BACKGROUND BOX
+==================== */
+.backgroundBox{
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  z-index: 99;
+  transition: all 500s ease;
+}
+.backgroundBox .imageContainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--white);
+  padding: var(--padding-rem-1);
+  border-radius: var(--border-radius-1);
+  cursor: pointer;
+}
+.backgroundBox img{
+    width: 500px;
+  aspect-ratio: 1;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 /* -------------MEDIA QUERIES--------------- */
 @media screen and (max-width: 780px) {
@@ -150,7 +231,6 @@ RULES
     .flexion{
         flex-direction: column;
     }
-
     .staff .gridBox{
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
@@ -160,6 +240,12 @@ RULES
     .fee-structure .feeBox{
         grid-template-columns: 1fr 1fr;
     }
+    .backgroundBox img{
+        width: 300px;
+    }
+    .contact .flex{
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 480px){
     .staff .gridBox{
@@ -167,5 +253,12 @@ RULES
     } 
     .fee-structure .feeBox{
         grid-template-columns: 1fr;
+    }
+    .imageGallery .galleryBox{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .imageGallery .galleryBox img{
+        width: 135px;
     }
 }

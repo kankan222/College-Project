@@ -38,7 +38,6 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 //     link.classList.add("activeLink");
 //   }
 // });
-
 //SLIDER
 
 let slideIndex = 0;

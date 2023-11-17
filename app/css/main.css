@@ -182,7 +182,6 @@ nav .flex {
   position: relative;
 }
 nav ul li {
-  /* font-size: 1.2rem; */
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
@@ -202,7 +201,7 @@ nav ul li a::before {
   transform-origin: left;
   transform: scale(0);
 }
-nav ul li a.activeLink::before {
+nav ul li a:active::before {
   transform: scale(1);
 }
 nav ul li a:hover{
@@ -575,7 +574,6 @@ footer .uil:hover{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .gallery .image-container img{
-    aspect-ratio: 1/1;    
     width: 135px;
   }
 }
