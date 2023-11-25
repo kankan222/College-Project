@@ -36,10 +36,12 @@
                     </div>
                     <div class="field">
                         <label for="gender">Gender</label>
-                        <input type="radio" name="gender" id="male" value="male" required>
-                        <span>Male</span>
-                        <input type="radio" name="gender" id="female" value="female" required>
-                        <span>Female</span>
+                        <div class="flex1">
+                            <input type="radio" name="gender" id="male" value="male" required>
+                            <span>Male</span>
+                            <input type="radio" name="gender" id="female" value="female" required>
+                            <span>Female</span>
+                        </div>
                     </div>
                     <div class="field">
                         <label for="medium">Medium</label>
@@ -103,18 +105,56 @@
                 <div class="grid">
                     <div class="field">
                         <label for="stream">Stream</label>
-                        <input type="radio" name="stream" value="arts" required>
-                        <span>Arts</span>
-                        <input type="radio" name="stream" value="science" required>
-                        <span>Science</span>
-                        <input type="radio" name="stream" value="commerce" required>
-                        <span>Commerce</span>
+                        <div class="flex1">
+                            <input type="radio" name="stream" value="arts" required>
+                            <span>Arts</span>
+                            <input type="radio" name="stream" value="science" required>
+                            <span>Science</span>
+                            <input type="radio" name="stream" value="commerce" required>
+                            <span>Commerce</span>
+                        </div>
                     </div>
                     <hr>
                     <div class="field">
-                        <label for="english">English</label>
-                        <input type="radio" name="english">
+                        <div class="flex1">
+                            <input type="radio" name="english" checked>
+                            <label for="english">English</label>
+                            <input type="radio" name="alt">
+                        </div>
                     </div>
+                </div>
+                <!-- ------------------------------------------------- -->
+                <h3 class="color uppercase">Upload Your Documents</h3>
+                <div class="grid">
+                    <div class="field">
+                        <label for="photo">Upload <span class="color">Photo</span></label>
+                        <input type="file" name="photo" id="photo">
+                    </div>
+                    <div class="field">
+                        <label for="photo">Upload <span class="color">Birth Certificate</span></label>
+                        <input type="file" name="photo" id="photo">
+                    </div>
+                    <div class="field">
+                        <label for="photo">Upload <span class="color">Marksheet</span></label>
+                        <input type="file" name="photo" id="photo">
+                    </div>
+                    <div class="field">
+                        <label for="photo">Upload <span class="color">School Certificate</span></label>
+                        <input type="file" name="photo" id="photo">
+                    </div>
+                </div>
+                <!-- ------------------------------------------------- -->
+                
+                <h3 class="color uppercase">Terms & Conditions</h3>
+                <div class="ter field">
+                    <label class="">Read carefully before filling out the admission form</label>
+                    <label>1. Fill in the details of the form correctly.</label>
+                    <label>2. One must submit proper photos in the required field.</label>
+                    <label>3. Your photo and xerox copies documents are to be submitted offline along with the bill.(Before attending college)</label>
+                    <label>4. If the payment cancels, try again after sometime or <span class="color" onclick="location.href =`/files/contact.html`">Contact Us</span> </label>
+                </div>
+                <div class="field">
+                    <button class="btn uppercase">Pay & Submit</button>
                 </div>
             </form>
         </div>
