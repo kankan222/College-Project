@@ -97,4 +97,3 @@ document.querySelector(`.com_modal_popup`).onclick = function(){
   document.querySelector(`.com_modal_popup`).classList.add(`hide`);
   document.querySelector(`body`).classList.remove(`flow`);
 }
-

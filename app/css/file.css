@@ -157,7 +157,7 @@ RULES
     padding-bottom: 0;
     width: 100%;
 }
-:is(.contact, .admission) .form{
+:is(.contact, .admission, .admin) .form{
     padding: var(--padding-rem-1);
 }
 .contact .uil{
@@ -166,23 +166,24 @@ RULES
 .contact span.color{
     font-weight: 600;
 }
-:is(.contact, .admission) .form{
+:is(.contact, .admission, .admin) .form{
     width: 100%;
 }
-:is(.contact, .admission) .form .field{
+:is(.contact, .admission, .admin) .form .field{
     width: 100%;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
 }
-:is(.contact, .admission) .form form :is(input, textarea){
+:is(.contact, .admission, .admin) .form form :is(input, textarea, select){
     width: 100%;
     padding: var(--padding-2);
     border-radius: 4px;
     border: 1px solid var(--black-light);
     font-size: 1rem;
+    cursor: pointer;
 }
-:is(.contact, .admission) .form form :is(input, textarea):focus{
+:is(.contact, .admission, .admin) .form form :is(input, textarea):focus{
     border: 1px solid var(--primary-color);
     /* border: none; */
 }
@@ -238,6 +239,34 @@ RULES
 .admission button{
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+}
+.none{
+    display: none;
+}
+/* =========================
+        ADMIN LOGIN
+========================         */
+.admin{
+    max-width: 400px;
+}
+.password{
+    position: relative;
+    overflow: hidden;
+}
+.password i{
+    position: absolute;
+    top: 32px;
+    right: 12px;
+    cursor: pointer;
+}
+.password i.active::before{
+    content: '\ebf8';
+ }
+.admin .field button{
+    font-weight: 600;
+}
+.login-adm{
+    text-align: center;
 }
 /* ====================
     BACKGROUND BOX
@@ -296,6 +325,7 @@ RULES
     .admission .form .grid{
         grid-template-columns: 1fr 1fr;
     }
+    
 }
 @media screen and (max-width: 480px){
     .staff .gridBox{
@@ -313,5 +343,8 @@ RULES
     }
     .admission .form .grid{
         grid-template-columns: 1fr;
+    }
+    .none{
+        display: block;
     }
 }
