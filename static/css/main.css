@@ -159,6 +159,7 @@ header .btn{
 }
 .cgrid h4{
   text-transform: uppercase;
+  text-decoration: underline;
 }
 .cgrid .one{
   font-weight: 500;
@@ -170,7 +171,9 @@ header .btn{
   cursor: pointer;
   font-weight: 600;
 }
-
+.cgrid .box .go-to:hover{
+  text-decoration: underline;
+}
 /* ---------COLLEGE AND SCHOOL SECTION ENDS HERE------------ */
 #link-school-section{
   font-size: 1.3rem;
