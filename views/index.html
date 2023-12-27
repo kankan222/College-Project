@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kalong Kapili Vidyapith</title>
 
-  <link rel="stylesheet" href="/app/css/main.css" />
+  <link rel="stylesheet" href="/static/css/main.css" />
 
   <!-- Icons Css  -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
@@ -15,7 +15,7 @@
 <body>
   <header class="flex">
     <main class="flex">
-      <img src="/app/img/home/logo.png" alt="logo" />
+      <img src="/static/img/home/logo.png" alt="logo" />
       <div class="title">
         <p><b>Kalong Kapili Vidyapith</b></p>
         <hr />
@@ -32,7 +32,7 @@
         <i class="uil uil-phone"></i>
         <span>Enquire Now</span>
       </a>
-      <a onclick="location.href = `/files/contact.html`" class="btn">
+      <a onclick="location.href = `/views/pages/contact.html`" class="btn">
         <i class="uil uil-envelope"></i>
         <span>Email Us</span>
       </a>
@@ -50,11 +50,11 @@
   <nav>
     <div class="uil uil-bars" id="hamburger"></div>
     <ul class="flex nav-list">
-      <li><a href="/index.html" class="nav-link">Home</a></li>
-      <li><a href="/files/aboutUs.html" class="nav-link">About Us</a></li>
-      <li><a href="/files/admission/admissionForm.html" class="nav-link">Admission</a></li>
+      <li><a href="/views/index.html" class="nav-link">Home</a></li>
+      <li><a href="/views/pages/aboutUs.html" class="nav-link">About Us</a></li>
+      <li><a href="/views/admission/admissionForm.html" class="nav-link">Admission</a></li>
       <li><a href="https://school.kalongkapilividyapith.in" class="nav-link">School Section</a></li>
-      <li><a href="/files/admin/login.html" class="nav-link">Login</a></li>
+      <li><a href="/views/admin/login.html" class="nav-link">Login</a></li>
     </ul>
     <p id="autoInput"></p>
   </nav>
@@ -62,16 +62,19 @@
   <!-- ========NAVBAR ENDS HERE=========== -->
   <section class="slides wigin">
     <div class="carousel">
-      <img src="/app/img/slider-img/slider-2.jpeg" alt="slider">
+      <img src="/static/img/slider-img/slider-1.jpeg" alt="slider">
     </div>
     <div class="carousel">
-      <img src="/app/img/slider-img/slider-3.jpeg" alt="slider">
+      <img src="/static/img/slider-img/slider-2.jpeg" alt="slider">
     </div>
     <div class="carousel">
-      <img src="/app/img/slider-img/slider-4.jpeg" alt="slider">
+      <img src="/static/img/slider-img/slider-3.jpeg" alt="slider">
     </div>
     <div class="carousel">
-      <img src="/app/img/slider-img/slider-5.jpeg" alt="slider">
+      <img src="/static/img/slider-img/slider-4.jpeg" alt="slider">
+    </div>
+    <div class="carousel">
+      <img src="/static/img/slider-img/slider-14.jpeg" alt="slider">
     </div>
   </section>
 
@@ -83,39 +86,39 @@
       to X) is located at GM Road, behind Nowgong College and the higher secondary section (Arts, Science and
       Commerce stream) is situated at A.D.P. Road, Christian Patty , Nagaon
       .We are consistently producing outstanding result...</p>
-    <a onclick="location.href = `/files/aboutUs.html`" class="btn">Know More</a>
+    <a onclick="location.href = `/views/pages/aboutUs.html`" class="btn">Know More</a>
   </div>
 
   <!-- ===========ABOUT US SECTION ENDS HERE=========== -->
   <section class="description wigin">
     <div class="container">
       <h3 class="uppercase"><span class="color">Principal"s </span>Desk</h3>
-      <img src="/app/img/home/principal.jpeg" alt="Principal">
+      <img src="/static/img/home/principal.jpeg" alt="Principal">
       <p class="name color">Sri Manabendra Nag</p>
       <p class="para">I am extremely delighted to welcome you to Kalong Kapili Vidyapith , the college with an excellent
         academic reputation since its inception .The college established in the year 2004, is symbolically
         named as Kalong Kapili Vidyapith , after
         the two important rivers Kalong and Kapili flowing through the heart of undivided Nagaon District .</p>
-      <a onclick="location.href = `/files/principal.html`" class="btn">Know More</a>
+      <a onclick="location.href = `/views/pages/principal.html`" class="btn">Know More</a>
     </div>
     <div class="container">
       <h3 class="uppercase"><span class="color">Rector's</span> Corner</h3>
-      <img src="/app/img/home/rector.jpg" alt="rector">
+      <img src="/static/img/home/rector.jpg" alt="rector">
       <p class="name color">Sri Bidhan Boruah</p>
       <p class="para">I extend to you all a very warm welcome to our college Website. We have tried to create an online
         resource that provides all relevant information about Kalong Kapili Vidyapith and hope that as you
         pursue through the contents of this website, you will
         get a sense of the rich flavour of life at our college.</p>
-      <a onclick="location.href = `/files/rector.html`" class="btn">Know More</a>
+      <a onclick="location.href = `/views/pages/rector.html`" class="btn">Know More</a>
     </div>
     <div class="container">
       <h3 class="uppercase"><span class="color">Vice Principal's</span> Message</h3>
-      <img src="/app/img/home/Vice-Principal.jpg" alt="Vice-Principal">
+      <img src="/static/img/home/Vice-Principal.jpg" alt="Vice-Principal">
       <p class="name color">Sri Shekhar Jyoti Saikia</p>
       <p class="para">Dear Students, Parents, Well-Wishers and Visitors, It is with great pleasure that I welcome you to
         our college website. This website has been developed to enable everyone to become familiar with KKV,
         its policies and other procedures.</p>
-      <a onclick="location.href = `/files/vice-principal.html`" class="btn">Know More</a>
+      <a onclick="location.href = `/views/pages/vice-principal.html`" class="btn">Know More</a>
     </div>
   </section>
 
@@ -158,7 +161,7 @@
     <!-- ADMISSION BUTTON  -->
     <div class="relative">
       <div class="adm-btn wigin">
-        <a onclick="location.href = `/files/admission/admissionForm.html`" class="btn">Apply Now</a>
+        <a onclick="location.href = `/views/admission/admissionForm.html`" class="btn">Apply Now</a>
       </div>
     </div>
     
@@ -166,19 +169,19 @@
       ADMISSION SECTION ENDS HERE
       ====================================================================== -->
     <section class="details wigin">
-      <div class="staff detBox"  onclick="location.href=`/files/staff.html`">
+      <div class="staff detBox"  onclick="location.href=`/views/pages/staff.html`">
         <i class="uil uil-users-alt"></i>
         <p class="uppercase">Staff</p>
       </div>
-      <div class="feeStructure detBox" onclick="location.href = `/files/fee-structure.html`">
+      <div class="feeStructure detBox" onclick="location.href = `/views/pages/fee-structure.html`">
         <i class="uil uil-rupee-sign"></i>
         <p class="uppercase">Fee Structure</p>
       </div>
-      <div class="rules detBox" onclick="location.href = `/files/rules.html`">
+      <div class="rules detBox" onclick="location.href = `/views/pages/rules.html`">
         <i class="uil uil-book-alt"></i>
         <p class="uppercase">Rules</p>
       </div>
-      <div class="facilities detBox" onclick="location.href = `/files/facilties.html`">
+      <div class="facilities detBox" onclick="location.href = `/views/pages/facilties.html`">
         <i class="uil uil-abacus"></i>
         <p class="uppercase">facilities</p>
       </div>
@@ -191,13 +194,13 @@
     <section class="gallery wigin">
       <div class="heading flex">
         <h3 class="uppercase">IMAGE <span class="color">gallery</span></h3>
-        <a onclick="location.href = `/files/gallery/gallery.html`" class="btn">View All</a>
+        <a onclick="location.href = `/views/gallery/gallery.html`" class="btn">View All</a>
       </div>
       <div class="image-container flex">
-        <img src="/app/img/gallery/image-1.jpeg" alt="image">
-        <img src="/app/img/gallery/image-4.jpeg" alt="image">
-        <img src="/app/img/gallery/image-7.jpeg" alt="image">
-        <img src="/app/img/gallery/image-12.jpeg" alt="image">
+        <img src="/static/img/gallery/image-1.jpeg" alt="image">
+        <img src="/static/img/gallery/image-4.jpeg" alt="image">
+        <img src="/static/img/gallery/image-7.jpeg" alt="image">
+        <img src="/static/img/gallery/image-12.jpeg" alt="image">
       </div>
     </section>
  <!-- ========================================================================
@@ -213,13 +216,13 @@
       <div class="footerbody">
         <p class="uppercase">Services</p>
         <ul>
-          <li onclick="location.href = `/files/aboutUs.html`">About Us</li>
-          <li onclick="location.href = `/files/admission/admissionForm.html`"">Admission</li>
-          <li onclick="location.href = `/files/staff.html`">Staff</li>
-          <li onclick="location.href = `/files/fee-structure.html`">Fee Structure</li>
-          <li onclick="location.href = `/files/rules.html`">Rules &amp; Regulations</li>
-          <li onclick="location.href = `/files/facilties.html`">Facilities</li>
-          <li onclick="location.href = `/files/contact.html`">Contact Us</li>
+          <li onclick="location.href = `/views/pages/aboutUs.html`">About Us</li>
+          <li onclick="location.href = `/views/admission/admissionForm.html`"">Admission</li>
+          <li onclick="location.href = `/views/pages/staff.html`">Staff</li>
+          <li onclick="location.href = `/views/pages/fee-structure.html`">Fee Structure</li>
+          <li onclick="location.href = `/views/pages/rules.html`">Rules &amp; Regulations</li>
+          <li onclick="location.href = `/views/pages/facilties.html`">Facilities</li>
+          <li onclick="location.href = `/views/pages/contact.html`">Contact Us</li>
         </ul>
       </div>
       <div class="footerfoot">
@@ -322,7 +325,7 @@
     ===================================================== -->
   <!--=======Javascript===== -->
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <script src="/app/js/main.js"></script>
+  <script src="/static/js/main.js"></script>
 </body>
 
 </html>
