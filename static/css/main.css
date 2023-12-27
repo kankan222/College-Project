@@ -136,6 +136,42 @@ header .btn{
 }
 
 /* ------HEADER ENDS HERE------ */
+.cgrid{
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding: var(--padding-2) var(--padding-rem-3);
+}
+.cgrid .box{
+  background: var(--primary-light-color);
+  padding: var(--padding-rem-1);
+  flex-grow: 1;
+  border-radius: var(--border-radius-2);
+  line-height: 2;
+  color: var(--primary-color);
+  position: relative;
+}
+.cgrid .box p{
+  display: flex;
+  align-items: center;
+}
+.cgrid .box p .uil{
+  font-size: 30px;
+}
+.cgrid h4{
+  text-transform: uppercase;
+}
+.cgrid .one{
+  font-weight: 500;
+}
+.cgrid .box .go-to{
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ---------COLLEGE AND SCHOOL SECTION ENDS HERE------------ */
 #link-school-section{
   font-size: 1.3rem;
   padding: var(--padding-rem-0);
